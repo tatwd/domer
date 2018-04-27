@@ -1,0 +1,28 @@
+{
+  "name": "domer",
+  "version": "0.1.0",
+  "description": "A simple and covenient javascript DOM util",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "rollup -c --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatwd/domer.git"
+  },
+  "keywords": [
+    "DOM"
+  ],
+  "author": "_king @tatwd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tatwd/domer/issues"
+  },
+  "homepage": "https://github.com/tatwd/domer#readme",
+  "devDependencies": {
+    "rollup": "^0.58.2"
+  }
+}
