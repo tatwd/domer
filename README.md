@@ -18,6 +18,7 @@ let [ objClass, objId, objTag ] = domer('class', 'id', 'tag');
 The function will to parse the entire document elements which have `class` attr or `id` attr.
 
 ```js
+// id="obj-id" class='obj-class'
 let { objId, objClass } = domer.ready(); 
 ```
 
