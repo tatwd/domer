@@ -7,19 +7,26 @@
 This is a DOM selector.
 
 ```js
-// select one
-let obj = domer('class_id_tag');
+// <div id="foo"></div>
+let obj = domer('foo');
+
+// <div class="foo"></div>
+let obj = domer('foo');
 
 // multi select
-let [ objClass, objId, objTag ] = domer('class', 'id', 'tag');
+// <div id="foo">
+//   <div class="koo"></div>
+// </div>
+let [ foo, koo ] = domer('foo', 'koo');
 ``` 
 
 ### `domer.ready()`
 The function will to parse the entire document elements which have `class` attr or `id` attr.
 
 ```js
-// id="obj-id" class='obj-class'
-let { objId, objClass } = domer.ready(); 
+// <div id="foo-id"></div>
+// <div class="foo-class"></div>
+let { fooId, fooClass } = domer.ready(); 
 ```
 
 ## License
